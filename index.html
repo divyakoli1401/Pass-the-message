@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body>
+    <div class="container">
+        <div class="elements">
+        <h1>A Message You Would like to pass</h1>
+        <input type="text" id="Message">
+        <br>
+        <button type="button" class="btn btn-info">Submit</button>
+        <h2 id="errorMessage"></h2>
+        <h1>Last Message Delivered</h1>
+        <h2 id="showMessage">Hello World</h2>
+        </div>
+    </div>
+        
+        <script>
+         const   inputMessage = document.querySelector("#Message");
+         const   button = document.querySelector("button");
+         const   displayMessage = document.querySelector("#showMessage");
+         const   noMessage = document.querySelector("#errorMessage")
+
+         button.addEventListener("click",messageRead)
+            
+         function messageRead(){
+             if(inputMessage.value == 0){
+                noMessage.textContent = "Please enter a message!";  
+                 setTimeout(function(){noMessage.textContent = "";},5000)
+                
+             }
+             else{
+            const textMessage = inputMessage.value;
+            displayMessage.textContent = textMessage;
+             }
+            }
+
+        </script>
+
+    
+</body>
+</html>

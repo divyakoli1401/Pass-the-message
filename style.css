@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(187, 137, 235);
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50%;
+    background-color: rgba(110, 126, 124, 0.74);
+}
+.elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#errorMessage{
+    color: red;
+}
+button{
+font-family: 'Times New Roman', Times, serif;
+background-color: #008CBA;
+color: white;
+padding: 10px 30px;
+text-align: center;
+display: inline-block;
+font-size: 16px;
+}
